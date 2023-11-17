@@ -52,24 +52,26 @@
             jscss.style.textAlign = ("center");
             jscss.style.fontSize = ("5em");
 
+            
+            // JAVASCRIPT ALTERANDO O BODY PARA A TELA NÃO ROLAR
             let body =  document.querySelector("body");
             body.style.overflow = ("hidden");
 
+            //LISTA DE OPÇOES
            var opcoes = ['Cartão de credito', 'PIX', 'Boleto'];
-            jogoopcoes = document.getElementById("opcaopaga");
+           jogoopcoes = document.getElementById("opcaopaga");
+            
 
-            opcoes.forEach(function(opcao) {
-            var input = document.createElement("input");
-            input.type = 'radio';
-            input.name = 'opcao'; // Certifique-se de que todos os elementos do grupo tenham o mesmo 'name'
-            input.value = opcao;
-
-            var label = document.createElement("label");
-            label.innerHTML = opcao;
-
-    // Adicione o input e o label ao elemento pai (neste caso, div com id 'opcaopaga')
-            jogoopcoes.appendChild(input);
-            jogoopcoes.appendChild(label);
+           // PROF EU TIVE MUITA DUVIDA AO USAR O FOREACHE QUANDO EXECUTAVA ELE BUGAVA TODO O SITE, POR ISSO VOU DEIXAR COMENTADO
+           // FOREACH PARA EXIBIR AS OPÇÕES DE PAGAMENTO
+           /* opcoes.forEach(function(opcao)){
+                var input = document.createElement = ("input");
+                input.type = 'radio';
+                input.value = 'opacao';
+             
+                var label = document.createElement = ("label");
+                label.innerHTML = opcao;                
+            }*/
 
     
               
